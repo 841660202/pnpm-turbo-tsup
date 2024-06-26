@@ -1,0 +1,21 @@
+{
+  "name": "pnpm-turbo-tsup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:tsup": "turbo run build --filter={add,mul,sub}",
+    "build:tsc": "turbo run build:tsc --filter={add,mul,sub}",
+    "dev:tsc": "turbo run dev:tsc --filter={add,mul,sub,react-web}",
+    "dev:tsup": "turbo run dev:tsup --filter={add,mul,sub,react-web}"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "turbo": "^2.0.5"
+  },
+  "packageManager": "pnpm@8.9.2"
+}

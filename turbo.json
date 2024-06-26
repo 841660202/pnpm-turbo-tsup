@@ -1,0 +1,47 @@
+{
+  "$schema": "https://turborepo.org/schema.json",
+  "tasks": {
+    "clean": {
+      "dependsOn": [],
+      "outputs": []
+    },
+    "lint": {},
+    "dev": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:tsc": {
+      "cache": false,
+      "persistent": true
+    },
+    "dev:tsup": {
+      "cache": false,
+      "persistent": true
+    },
+    "build:tsc": {
+      "dependsOn": [
+        "^build:tsc"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "build:tsup": {
+      "dependsOn": [
+        "^build:tsup"
+      ],
+      "outputs": [
+        "dist/**"
+      ]
+    },
+    "start": {
+      "cache": false
+    }
+  },
+  "globalDependencies": [
+    "tsconfig.base.json",
+    "tsconfig.json",
+    "jest.config.ts"
+  ],
+  "ui": "stream"
+}

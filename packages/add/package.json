@@ -1,0 +1,33 @@
+{
+  "name": "add",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:tsc": "tsc --watch",
+    "dev:tsup": "tsup --watch",
+    "build:tsup": "tsup",
+    "build:tsc": "tsc",
+    "clean": "rm -rf dist && rm -rf .turbo"
+  },
+  "files": [
+    "dist",
+    "src",
+    "README.md",
+    "tsconfig.json"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tsup": "^8.1.0",
+    "typescript": "^5.5.2"
+  },
+  "dependencies": {
+    "mul": "workspace:^",
+    "sub": "workspace:^"
+  }
+}
