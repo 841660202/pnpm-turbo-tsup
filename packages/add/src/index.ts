@@ -1,3 +1,5 @@
 export { add, AddOp, AddParams } from './lib';
-export { sub, SubOp, SubParams } from 'sub';
-export { mul, MulOp, MulParams } from 'mul';
+export type { SubParams } from 'sub';
+export { sub, SubOp } from 'sub';
+export type { MulParams } from 'mul';
+export { mul, MulOp } from 'mul';
