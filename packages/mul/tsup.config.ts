@@ -8,7 +8,7 @@ export default defineConfig([
     sourcemap: true,
     clean: true,
     treeshake: false,
-    minify: false,
+    minify: true,
     external: [],
   },
 ]);

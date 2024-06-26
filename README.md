@@ -17,3 +17,9 @@ pnpm dev:tsup  # run tsup
 ![alt text](image.png)
 
 ![alt text](image-2.png)
+
+## fix
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
