@@ -2,12 +2,15 @@ import { useState } from 'react';
 import reactLogo from './assets/react.svg';
 import viteLogo from '/vite.svg';
 import './App.css';
-import { add, AddParams, AddOp, mul, MulOp, MulParams, sub, SubOp, SubParams } from 'add';
+import { consola } from 'consola';
+import { add, AddParams, AddOp, mul, MulOp, MulParams, sub, SubOp, SubParams, Hello } from 'add';
 // import { add, AddParams, AddOp } from 'add';
 // import { mul, MulParams, MulOp } from 'mul';
 // import { sub, SubParams, SubOp } from 'sub';
 function App() {
   const [count, setCount] = useState(0);
+  const helloInstance = new Hello();
+  helloInstance.hello();
 
   const data0: AddParams[] = [
     { value: 1, type: 'add' },
@@ -24,6 +27,14 @@ function App() {
   const addValue = add(data0[0], data0[1]);
   const mulValue = mul(mul0[0], mul0[1]);
   const subValue = sub(sub0[0], sub0[1]);
+
+  consola.info('Using consola 3.0.0');
+  consola.start('Building project...');
+  consola.warn('A new version of consola is available: 3.0.1');
+  consola.success('Project built!');
+  consola.error(new Error('This is an example error. Everything is fine!'));
+  consola.box('I am a simple box');
+
   return (
     <>
       <div>
